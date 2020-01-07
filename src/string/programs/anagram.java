@@ -8,7 +8,7 @@ public class anagram {
 	public static boolean checkanagram(String str1 , String str2) 
 	{
 		char[] chrarr1 = str1.toCharArray();
-		char[] chrarr2 = str1.toCharArray();
+		char[] chrarr2 = str2.toCharArray();
 		
 		Arrays.sort(chrarr1);
 		Arrays.sort(chrarr2);
@@ -20,7 +20,7 @@ public class anagram {
 
 	public static void main(String[] args) 
 	{
-		if(checkanagram("JAVA", "AVAJ") == true) 
+		if(checkanagram("stop", "top") == true) 
 		{
 			System.out.println("String is anagram");
 		}
